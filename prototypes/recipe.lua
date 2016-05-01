@@ -27,11 +27,37 @@ data:extend(
     type = "recipe",
     name = "basic-mining-drill-2",
     energy_required = 2,
+	enabled = false,
     ingredients =
     {
       {"basic-mining-drill", 1},
       {"speed-module", 2}
     },
     result = "basic-mining-drill-2"
-  }
+  },
+  {
+    type = "recipe",
+    name = "fusion-reactor-equipment-2",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"fusion-reactor-equipment", 2},
+      {"alien-artifact", 30}
+    },
+    result = "fusion-reactor-equipment-2"
+  },
+  {
+		type = "recipe",
+		name = "smart-long-handed-inserter",
+		enabled = "false",
+		ingredients =
+		{
+			{"fast-long-handed-inserter",1},
+			{"smart-inserter",1},
+			{"iron-gear-wheel",1},
+			{"electronic-circuit",2}
+		},
+		result = "smart-long-handed-inserter"
+	}
 })

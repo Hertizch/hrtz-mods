@@ -69,5 +69,50 @@ data:extend(
     },
     upgrade = true,
     order = "i-c-a"
+  },
+  {
+    type = "technology",
+    name = "fusion-reactor-equipment-2",
+    icon = "__base__/graphics/technology/fusion-reactor-equipment.png",
+    prerequisites = {"fusion-reactor-equipment"},
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "fusion-reactor-equipment-2"
+      }
+    },
+    unit =
+    {
+      count = 250,
+      ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}},
+      time = 30
+    },
+    order = "g-l"
+  },
+  {
+    type = "technology",
+    name = "advanced-electronics-3",
+    icon = "__hrtz-mods__/graphics/technology/advanced-electronics-3.png",
+    prerequisites = {"advanced-electronics-2", "logistics-2"},
+	effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "smart-long-handed-inserter"
+      }
+    },
+    unit =
+    {
+      count = 200,
+      ingredients =
+      {
+        {"science-pack-1", 1},
+        {"science-pack-2", 1},
+		{"science-pack-3", 1}
+      },
+      time = 30
+    },
+    order = "a-d-c",
   }
 })
